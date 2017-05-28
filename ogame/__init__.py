@@ -13,7 +13,7 @@ from dateutil import tz
 
 
 def parse_int(text):
-    return int(text.replace('.', '').strip())
+    return int(text.replace('.', '').replace(',', '').strip())
 
 
 def for_all_methods(decorator):
